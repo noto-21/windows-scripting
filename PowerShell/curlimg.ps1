@@ -11,7 +11,7 @@ param
 # If there are not exactly 2 arguments, or if the URL or output file is empty, print usage and exit
 if ($PSBoundParameters.Count -ne 2 -or $url -eq "" -or $output -eq "")
 {
-    Write-Host "Usage: $PSScriptRoot\curlimg.ps1 <image_url> <output_file>"
+    Write-Host "Usage: $PSCommandPath <image_url> <output_file>"
     exit 1
 }
 
