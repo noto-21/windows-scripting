@@ -57,7 +57,7 @@ if (Test-Path $output)  # If the output file already exists
         else  # If the user does not want to download as a renamed file, exit without downloading
         {
             Write-Host "Exiting without downloading the image."
-            exit 1
+            exit 0
         }
     }
     else  # If the user confirms to overwrite the existing file, print a message
